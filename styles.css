@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --light-pink: hsl(350, 70%, 85%); /* Light pink color */
+  --body-font: "Josefin Sans", sans-serif;
+}
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  color: var(--dark-grayish-red);
+  overflow-y: scroll;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 57.5% 1fr;
+  min-height: 100vh;
+}
+
+.logo {
+  height: 2.3rem;
+  max-width: 100%;
+}
+
+.info-section {
+  padding: 4rem 10.2rem;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.1rem;
+  line-height: 4.2rem;
+  margin-bottom: 3rem;
+}
+
+h1 span {
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+
+.text-section {
+  max-width: 550px;
+}
+
+.input-section {
+  margin-top: 2.6rem;
+}
+
+.input-field {
+  border-color: var(--desaturated-red);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 25px;
+  padding: 1.7rem;
+  background-color: transparent;
+  color: var(--dark-grayish-red);
+}
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 25px;
+  background-color: var(--light-pink); /* Light pink background for button */
+  color: var(--dark-grayish-red); /* Text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+  background-color: var(--soft-red); /* Darker pink on hover */
+  color: white; /* White text on hover */
+}
+
+.arrow-img {
+  background-image: url("images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.error-msg, .error {
+  color: var(--soft-red);
+  font-size: 0.8rem;
+  display: none;
+}
+
+@media (max-width: 1025px) {
+  .main-container {
+    grid-template-columns: 50% 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .info-section,
+  .subscribe-section {
+    padding: 5rem 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Countdown Section Styles */
+.countdown-section {
+  background-color: var(--light-pink); /* Light pink background */
+  color: var(--dark-grayish-red); /* Text color */
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.countdown-section h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown-item {
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.countdown-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--light-pink) !important; /* Important to override Bootstrap's default */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--dark-grayish-red) !important; /* Text color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover {
+  color: var(--soft-red) !important; /* Darker pink on hover */
+}

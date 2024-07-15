@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maggie's Boutique - Welcome</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Maggie's Boutique</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Countdown Section -->
+    <section class="countdown-section mt-5 bg-pink text-white py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h2>Coming Soon</h2>
+            <div id="countdown"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section mt-5">
+      <div class="row">
+        <!-- Image Section -->
+        <div class="col-md-6">
+          <img src="image1.jpeg" class="img-fluid" alt="Image related to Maggie's Boutique">
+        </div>
+        <!-- Text Section -->
+        <div class="col-md-6">
+          <!-- Logo -->
+          <img class="logo mb-4" src="mblogo.png" alt="Maggie's Boutique Logo" />
+          <div class="text-section">
+            <h1><span>We're</span> coming soon</h1>
+            <p class="mt-4">Hello fellow paw parents! We're currently building our Boutique.
+              Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            <!-- Input Section -->
+            <form class="input-section mt-4">
+              <input type="email" class="form-control input-field" placeholder="Email Address">
+              <div class="input-group-append">
+                <button class="btn btn-success" type="submit">
+                  Subscribe
+                </button>
+              </div>
+              <div class="invalid-feedback error-msg"></div>
+              <div class="invalid-feedback error"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Countdown and Form Validation JS -->
+  <script src="app.js"></script>
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Maggie's Boutique. All rights reserved.</p>
+  </footer>
+</body>
+</html>
